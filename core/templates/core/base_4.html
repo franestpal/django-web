@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+ 
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    {% load static %}
+
+
+
+
+
+
+ 
+
+    <!-- Bootstrap -->
+    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Roboto:300,100'Italic', serif; rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.
+    css">
+     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+    <link rel="stylesheet" href="static/core/css/css-web/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="static/core/css/css-web/animate.css">
+    
+    <link rel="stylesheet" href="static/core/css/css-web/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/core/css/css-web/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/core/css/css-web/magnific-popup.css">
+
+    <link rel="stylesheet" href="static/core/css/css-web/aos.css">
+
+    <link rel="stylesheet" href="static/core/css/css-web/ionicons.min.css">
+    
+
+    <link rel="stylesheet" href="static/core/css/css-web/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="static/core/css/css-web/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="static/core/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="static/core/css/css-web/icomoon.css">
+
+    	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <head>
+    <!-- Estilos -->
+    <style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+      body{
+        
+        background: rgba(180,204,204,0.7);
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position:relative;
+        -webkit-box-shadow: inset 0 0 80px #333;
+        -moz-box-shadow: inset 0 0 80px #333;
+        -o-box-shadow: inset 0 0 80px #333;
+        box-shadow: inset 0 0 80px #333;       
+        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family:'Italic', serif;;
+      }
+
+      p {
+        line-height: 1.75;
+      }
+
+      .text-faded {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .site-heading {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: 'Italic', serif;;
+        position:relative;
+        display: inline-block
+      }
+
+      .site-heading .site-heading-upper {
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      .site-heading .site-heading-lower {
+        font-size: 5rem;
+        font-weight: 100;
+        line-height: 4rem;
+      }
+
+      .page-section {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+
+      .section-heading {
+        text-transform: uppercase;
+      }
+
+      .section-heading .section-heading-upper {
+        display: block;
+        font-size: 1rem;
+        font-weight: 800;
+        padding-bottom:.5rem;
+      }
+
+      .section-heading .section-heading-lower {
+        display: block;
+        font-size: 2rem;
+        font-weight: 200;
+      }
+
+
+      .section-heading .section-heading-under {
+        display: block;
+        font-size: 1rem;
+        text-transform: none;
+        font-weight: 300;
+        margin-top:.5rem;
+      }
+
+      .bg-faded {
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      #mainNav {
+          
+        font-family: 'Italic', serif;
+        height:15%;
+        width:100%; 
+        position:fixed-top;     
+        margin-top:0px;
+
+        
+      }
+
+      #mainNav .navbar-brand {
+        color: rgba(112,168,218,1);
+        font-family: 'Italic';
+        font-size: 16px !important;
+      }
+
+      #mainNav .navbar-nav .nav-item .nav-link {
+        background-image:white;
+        color: white;           
+        font-family: 'Italic';
+        font-size: 15px !important;
+        font-weight:bold;
+        float:rigth;
+        width:100%;
+        text-transform:uppercase;
+        left:0rem;          
+        margin-top:0rem;
+        display: inline-block;
+        vertical-align: middle;
+        top:0px;
+        vertical-align: middle;
+                   
+
+        
+
+      }
+      #firstSlide {position:absolute;display:block;height:100%;weight:100%;margin-left:20%;margin-right:80%; z-index:1;vertical-align: middle;justify-content:center;}
+    
+
+margin-right: auto; vertical-align: middle;margin-top:0;}
+      #mainNav .navbar-nav .nav-item.active .nav-link {
+        color: rgba(180,204,204);           
+        font-family: 'Italic';
+        font-size: 15px !important;
+        font-weight:bold;
+        float:rigth;
+        width:100%;
+        text-transform:uppercase;
+        left:1.5rem;         
+        margin-left:100px;
+        margin-top:0rem;
+        display: inline-block;
+        vertical-align: middle;
+        top:0px;  
+        color:white;
+      }
+
+      @media (min-width: 992px) {
+        #mainNav .navbar-nav .nav-item .nav-link {  
+          font-size: 0.5rem;
+          display:inline-block;
+          color:white;
+          margin-left:50px;
+          position:relative;
+                   
+        }
+        #mainNav .navbar-nav .nav-item .nav-link:hover {
+          color: #2e3a23;
+          display:inline-block;
+          font-size: 15px !important;
+          font-family: 'Italic';
+        }
+        #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+          color: #2e3a23;
+        }
+
+      .btn{font-family: 'Italic';
+        font-size: 15px !important;
+        font-weight:bold;
+        display:inline-block;
+        text-transform:uppercase;
+        font:rgba(180,204,204);
+        position:absolute;
+        vertical-align: middle;
+        top:40px;
+        left:80%;
+        }
+
+
+      .btn-xl {
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        top:0;
+      }
+
+
+      .intro {
+        position: relative;
+        
+      }
+
+      @media (min-width: 992px) {
+        .intro .intro-img {
+          width: 75%;
+          float: right;
+        }
+        .intro .intro-text {
+          left: 0;
+          width: 60%;
+          margin-top: 3rem;
+          position: absolute;
+        }
+        .intro .intro-text .intro-button {
+          width: 100%;
+          left: 0;
+          position: absolute;
+          bottom: -2rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .intro .intro-text {
+          width: 45%;
+        }
+      }
+
+      .cta {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        background-color: rgba(13, 32, 49, 1) ;
+        margin-top: 0px;
+      }
+
+      .cta .cta-inner {
+        position: relative;
+        padding: 3rem;
+        margin: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      .cta .cta-inner:before {
+        border-radius: 0.5rem;
+        content: '';
+        position: absolute;
+        top: -0.5rem;
+        bottom: -0.5rem;
+        left: -0.5rem;
+        right: -0.5rem;
+        border: 0.25rem solid rgba(255, 255, 255, 0.85);
+      }
+
+      .cta .cta-innerv {
+        position: relative;
+        padding: 3rem;
+        margin: 0.5rem;
+        background-color: rgba(255, 255, 255,1);
+      }
+
+      @media (min-width: 992px) {
+        .about-heading .about-heading-img {
+          position: relative;
+          margin-right:20rem;
+          width:60%;
+          top: 100px;
+          z-index: 0;
+          height:60%;
+          -webkit-box-shadow: inset 0 0 80px #333;
+        -moz-box-shadow: inset 0 0 80px #333;
+        -o-box-shadow: inset 0 0 80px #333;
+        box-shadow: inset 0 0 80px #333; 
+        }
+        .about-heading .about-heading-content {
+          margin-top: -25rem;
+          margin-left:40rem;
+          margin-bottom: 25rem;
+          position: relative;
+          z-index: 1;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .product-item .product-item-title {
+          position: relative;
+          z-index: 1;
+          margin-bottom: -3rem;
+        }
+        .product-item .product-item-img {
+          position: relative;
+          z-index: 0;
+          max-width: 60vw;
+        }
+        .product-item .product-item-description {
+          position: relative;
+          z-index: 1;
+          margin-top: -3rem;
+          max-width: 50vw;
+        }
+      }
+
+      .list-hours {
+        font-size: 0.9rem;
+      }
+
+      .list-hours .list-hours-item {
+        border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+        padding-bottom: .25rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+      }
+
+      .list-hours .list-hours-item.today {
+        font-weight: bold;
+        color: rgba(112,168,218,1);
+      }
+
+      @media (min-width: 992px) {
+        .list-hours {
+          width: 50%;
+          font-size: 1.1rem;
+        }
+      }
+
+      .address strong {
+        font-size: 1.2rem;
+      }
+
+      .footer {
+        background-color: rgba(13, 32, 49, 1);
+      }
+
+      .text-primary {
+        color: rgba(112,168,218,0.6) !important;
+      }
+
+      .bg-primary {
+        background-color: rgba(112,168,218,1) !important;
+      }
+
+      .btn {
+        box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+      }
+
+      .btn-primary {
+        background-color: rgba(112,168,218,1);
+        border-color: rgba(112,168,218,1);
+      }
+
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        background-color: #df902a;
+        border-color: #df902a;
+      }
+
+      .font-weight-light {
+        font-weight: 100 !important;
+      }
+
+      .mbtm{
+        padding-top: 5rem;
+      }
+
+      .mbt{
+        padding-top: 2rem;
+      }
+
+      .mbt1{
+        padding-top: 1.25rem;
+      }
+
+      a.link{
+        color: #df902a;
+      }
+
+      a.link:hover{
+        text-decoration: none;
+        color: rgba(112,168,218,1) !important;
+      }
+
+      .section-content{
+        font-family: 'Italic';
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 28px !important;
+      }
+
+      ul.errorlist{
+        padding-top: .75rem;
+        font-style: italic;
+        color: red;
+      }
+    .carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .6s;
+ transition-property: opacity;
+    }
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+
+      @media (min-width: 992px) {
+      .carousel-item{
+        object-fit: cover;
+        height: 800px;
+        float:left;
+        margin-top: 0px;
+        top:0px;
+        position:relative ;
+      }
+      }
+      .img: hover {opacity:0.7;}
+
+       @media (min-width: 992px) { 
+      .carousel-control-prev:{margin-top: 100px;}}
+
+      .site-heading{height: 50px;
+                    margin-top: 0.5rem}
+
+      }
+      .btn-outline-light{
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        margin-bottom:0rem;
+        margin-top:2rem;
+        color: rgba(180,204,204);
+        background-color:; 
+      }
+
+      .masthead{position:fixed-top;
+              height: 100px;
+              background: rgba(180,204,204,0.6);
+              }
+
+
+      .fa{position:relative;
+          color: rgba(180,204,204);
+          top:0px;
+          margin:0 25px 0 -120px;
+          right:0.5px;
+          ;}
+    
+          
+          }
+
+        .p {
+          float: left;
+          width: 100px;
+          height: 100px;
+          margin: 3px;
+          padding: 5px;
+          border: black 2px solid;
+          
+        }
+
+      .ftco-section {
+  padding: 6em 0;
+  position: relative;margin-top:-75px; 
+  background-color: white;
+  opacity:1;
+  }
+
+      #texto{
+    display: inline-block;
+    vertical-align: middle;
+  font-family: 'Italic';
+  font-size: 15px !important;
+  color: white;
+  padding-left:30px;
+  font-weight:bold;
+  left: 122px;
+  top:35px;
+  position:absolute;}
+
+  #navbarSupportedContent{top:0; margin-right :2px;}
+  
+#logo{top: px; margin-left:-100px;}
+
+.header__top {
+	padding: 0.5px 0;
+}
+
+.header__top__left p {
+	margin-bottom: 0;
+}
+
+.header__top__right .header__top__links .nav .i {margin-right:0px;
+	text-align: left; right:0.5rem;
+}
+
+.header__top__links {
+	display: inline-block;
+	margin-right: 25px;}
+
+.img-fluid{weight:100%; height:100%;}
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+  margin-right:-120px;
+  color:white;
+}
+ .col-lg-3 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }  
+}
+
+
+    </style>
+    </head>
+
+
+
+<body>            
+
+
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar" id="mainNav">
+    <div class=container >
+      <div id="header-logo" style='{width:80px;}'>
+          <img id = "logo" src="{% static 'core/img/logo.png'%}" width="140" height="120"  alt="" style="{float:left;margin-top:0px;margin-left:5px;}"><div id="texto">CAUDELI<div id="texto2">PESCADERIA</div></div>
+      </div>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav">
+                    <li class="nav-item px-lg-4 {% if request.path == '/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path == '/services/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path|slice:":6" == '/recetas/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'recetas' %}">Recetas</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path == '/store/' %}active{% endif %}">
+                      <a  class="btn btn-outline-light" href="store.html" >COMPRA ONLINE</a>
+                    </li> 
+                          <div class="col-lg-2 col-md-2">
+                               {% include "core/navbar.html" %}
+                                
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </nav> 
+                
+ {% block content %} {% endblock%}
+   
+    <!-- Bootstrap -->
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+	<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber...." class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
+    
+
+  <script href="/static/core/js/jquery.min.js"></script>
+  <script href="/static/core/js/jquery-migrate-3.0.1.min.js"></script>
+  <script href="/static/core/js/popper.min.js"></script>
+  <script href="/static/core/js/bootstrap.min.js"></script>
+  <script href="/static/core/js/jquery.easing.1.3.js"></script>
+  <script href="/static/core/js/jquery.waypoints.min.js"></script>
+  <script href="/static/core/js/jquery.stellar.min.js"></script>
+  <script href="/static/core/js/owl.carousel.min.js"></script>
+  <script href="/static/core/js/jquery.magnific-popup.min.js"></script>
+  <script href="/static/core/js/aos.js"></script>
+  <script href="/static/core/js/jquery.animateNumber.min.js"></script>
+  <script href="/static/core/js/bootstrap-datepicker.js"></script>
+  <script href="/static/core/js/scrollax.min.js"></script>
+  <script href="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script href="/static/core/js/google-map.js"></script>
+  <script href="/static/core/js/js/main.js"></script>
+    
+</body>
+
+</html>

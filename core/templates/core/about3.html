@@ -1,0 +1,53 @@
+
+
+{% load static %}
+<head>
+<style>
+@media (min-width: 992px) {
+        .about-heading .about-heading-img {
+          position: relative;
+          margin-right:20rem;
+          width:60%;
+          top: 100px;
+          z-index: 0;
+          height:60%;
+          -webkit-box-shadow: inset 0 0 80px #333;
+        -moz-box-shadow: inset 0 0 80px #333;
+        -o-box-shadow: inset 0 0 80px #333;
+        box-shadow: inset 0 0 80px #333; 
+        }
+.about-heading .about-heading-content {
+  margin-top: -25rem;
+  margin-left:40rem;
+  margin-bottom: 25rem;
+  position: relative;
+  z-index: 1;
+}
+}
+
+    
+</style>
+</head>
+{% block title %}Historia{% endblock %}
+
+{% block content %}
+<section class="page-section about-heading">
+  <div class="container">
+    <img class="img-fluid rounded about-heading-img mb-5 mb-lg-0" src="{% static 'core/img2/intro_adobespark.png' %}" alt="">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-15 col-lg-16 mx-auto">         
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Compromiso total</span>
+              <span class="section-heading-lower">Garantizado</span>
+            </h2>
+            <p>Sed pulvinar blandit elit id venenatis. Ut eget lacus neque. Nullam justo quam, efficitur nec turpis vitae, efficitur posuere ligula. Proin ut turpis orci. Aenean porta sodales lectus faucibus pellentesque. In sed felis iaculis, rhoncus felis a, maximus mi. </p>
+            <p>Curabitur efficitur pellentesque tellus nec volutpat. In viverra mattis sem, facilisis condimentum mi rutrum ut. Quisque ut pellentesque dui.Nullam eu vehicula metus. Pellentesque id interdum elit. Aenean in efficitur enim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

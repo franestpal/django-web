@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+  <head>
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    {% load static %}
+
+
+    <li class="site-heading fixed-top text-center text-white d-none d-lg-block">
+      <img src="{% static 'core/img/B42722C4-9FA6-4DAC-9877-2057EE1781BE_4_5005_c.jpeg'%}" alt="First slide">
+    </li>
+
+</head>
+
+ 
+
+    <!-- Bootstrap -->
+    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Estilos -->
+    <style type="text/css">
+      body { 
+        background:  #b4cccc  ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Raleway';
+      }
+
+      p {
+        line-height: 1.75;
+      }
+
+      .text-faded {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .site-heading {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: 'Raleway';
+        position:fixed;
+      }
+
+      .site-heading .site-heading-upper {
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      .site-heading .site-heading-lower {
+        font-size: 5rem;
+        font-weight: 100;
+        line-height: 4rem;
+      }
+
+      .page-section {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+
+      .section-heading {
+        text-transform: uppercase;
+      }
+
+      .section-heading .section-heading-upper {
+        display: block;
+        font-size: 1rem;
+        font-weight: 800;
+        padding-bottom:.5rem;
+      }
+
+      .section-heading .section-heading-lower {
+        display: block;
+        font-size: 2rem;
+        font-weight: 200;
+      }
+
+
+      .section-heading .section-heading-under {
+        display: block;
+        font-size: 1rem;
+        text-transform: none;
+        font-weight: 300;
+        margin-top:.5rem;
+      }
+
+      .bg-faded {
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      #mainNav {
+        background-color: rgba(155,188,187);
+        font-family: 'Raleway';
+        position:sticky;
+        display:inline-block;
+        margin-bottom: .8rem;
+        margin-top: 0px;
+      }
+
+      #mainNav .navbar-brand {
+        color: rgba(112,168,218,1);
+      }
+
+      #mainNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 800;
+        font-family: 'Lora' !important;
+        font-size: 16px !important;;
+      }
+
+      #mainNav .navbar-nav .nav-item.active .nav-link {
+        color: rgba(112,168,218,1);
+      }
+
+      @media (min-width: 992px) {
+        #mainNav .navbar-nav .nav-item .nav-link {
+          font-size: 0.9rem;
+        }
+        #mainNav .navbar-nav .nav-item .nav-link:hover {
+          color: rgba(255, 255, 255, 0.4);
+        }
+        #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+          color: rgba(112,168,218,1);
+        }
+
+      #mainNav .navbar-nav .container {weight: 150%;}
+      }
+
+      .btn-xl {
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+
+      .intro {
+        position: relative;
+      }
+
+      @media (min-width: 992px) {
+        .intro .intro-img {
+          width: 75%;
+          float: right;
+        }
+        .intro .intro-text {
+          left: 0;
+          width: 60%;
+          margin-top: 3rem;
+          position: absolute;
+        }
+        .intro .intro-text .intro-button {
+          width: 100%;
+          left: 0;
+          position: absolute;
+          bottom: -2rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .intro .intro-text {
+          width: 45%;
+        }
+      }
+
+      .cta {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: rgba(112,168,218,0.3) ;
+      }
+
+      .cta .cta-inner {
+        position: relative;
+        padding: 3rem;
+        margin: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      .cta .cta-inner:before {
+        border-radius: 0.5rem;
+        content: '';
+        position: absolute;
+        top: -0.5rem;
+        bottom: -0.5rem;
+        left: -0.5rem;
+        right: -0.5rem;
+        border: 0.25rem solid rgba(255, 255, 255, 0.85);
+      }
+
+      .cta .cta-innerv {
+        position: relative;
+        padding: 3rem;
+        margin: 0.5rem;
+        background-color: rgba(255, 255, 255,1);
+      }
+
+      @media (min-width: 992px) {
+        .about-heading .about-heading-img {
+          position: relative;
+          z-index: 0;
+        }
+        .about-heading .about-heading-content {
+          margin-top: -5rem;
+          position: relative;
+          z-index: 1;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .product-item .product-item-title {
+          position: relative;
+          z-index: 1;
+          margin-bottom: -3rem;
+        }
+        .product-item .product-item-img {
+          position: relative;
+          z-index: 0;
+          max-width: 60vw;
+        }
+        .product-item .product-item-description {
+          position: relative;
+          z-index: 1;
+          margin-top: -3rem;
+          max-width: 50vw;
+        }
+      }
+
+      .list-hours {
+        font-size: 0.9rem;
+      }
+
+      .list-hours .list-hours-item {
+        border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+        padding-bottom: .25rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+      }
+
+      .list-hours .list-hours-item.today {
+        font-weight: bold;
+        color: rgba(112,168,218,1);
+      }
+
+      @media (min-width: 992px) {
+        .list-hours {
+          width: 50%;
+          font-size: 1.1rem;
+        }
+      }
+
+      .address strong {
+        font-size: 1.2rem;
+      }
+
+      .footer {
+        background-color: rgba(13, 32, 49, 1);
+      }
+
+      .text-primary {
+        color: rgba(112,168,218,0.6) !important;
+      }
+
+      .bg-primary {
+        background-color: rgba(112,168,218,1) !important;
+      }
+
+      .btn {
+        box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+      }
+
+      .btn-primary {
+        background-color: rgba(112,168,218,1);
+        border-color: rgba(112,168,218,1);
+      }
+
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        background-color: #df902a;
+        border-color: #df902a;
+      }
+
+      .font-weight-light {
+        font-weight: 100 !important;
+      }
+
+      .mbtm{
+        padding-top: 5rem;
+      }
+
+      .mbt{
+        padding-top: 2rem;
+      }
+
+      .mbt1{
+        padding-top: 1.25rem;
+      }
+
+      a.link{
+        color: #df902a;
+      }
+
+      a.link:hover{
+        text-decoration: none;
+        color: rgba(112,168,218,1) !important;
+      }
+
+      .section-content{
+        font-family: 'Lora' !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 28px !important;
+      }
+
+      ul.errorlist{
+        padding-top: .75rem;
+        font-style: italic;
+        color: red;
+      }
+
+      @media (min-width: 992px) {
+      .carousel-item{
+        width: 100%;
+        object-fit: cover;
+        height: 600px;
+        float:left;
+        margin-top: 300px;}
+
+       @media (min-width: 992px) { 
+      .carousel-control-prev:{margin-top: 300px;}}
+
+      .site-heading{height: 100px;
+                    margin-top: 0.5rem}
+
+      }
+      .btn-outline-light{
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+
+    
+
+    </style>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">Caudeli</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4 {% if request.path == '/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == '/services/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == '/store/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'store' %}">Visítanos</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path|slice:":6" == '/recetas/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'recetas' %}">Recetas</a>
+            </li>
+            <li class="nav-item px-lg-4 {% if request.path == 'compra-online/' %}active{% endif %}">
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'compra-online' %}">Compra Online</a>
+            </li>  
+          </ul> 
+        </div>
+        <div class= "row">
+            <div class="col-md-12 search">
+              <form role="search" method="get">
+                <div id = "custom-search-input">
+                  <div class="input-group col-md-12">
+                    <input type="text" class = "form-control" placeholder = "Buscar..." name = "buscar">
+                    <span class = "input-group-list">
+                      <i class ¡="icon icon-search"></i>
+                      <button type="button" class="navbar-toggler"  data-toggle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Buscar</button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>  
+    </nav>
+  </head>
+
+  {% block content %} {% endblock %}
+
+
+    <!-- Pié de página -->
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0">
+          {% if LINK_TWITTER %}
+            <a href="{{LINK_TWITTER}}" class="link">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          {% endif %}
+          {% if LINK_FACEBOOK %}
+            <a href="{{LINK_FACEBOOK}}" class="link">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          {% endif %}
+          {% if LINK_INSTAGRAM %}
+            <a href="{{LINK_INSTAGRAM}}" class="link">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          {% endif %}
+        </p>
+        <p class="m-0 mbt">
+          <!--<a href="sample.html" class="link">Política de privacidad</a> ·
+          <a href="sample.html" class="link">Aviso legal</a> ·
+          <a href="sample.html" class="link">Cookies</a>-->
+          {% load pages_extras %}
+          {% get_page_list as page_list %}
+          {% for page in page_list %}
+            
+            <a href="{% url 'page' page.id page.title|slugify %}" class="link">{{page.title}}</a> {% if not forloop.last %}·{% endif %} 
+          {% endfor %}
+        </p>
+        <p class="m-0 mbt1">&copy; Pescaderia Caudeli 2021</p>
+      </div>
+	  </footer>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>

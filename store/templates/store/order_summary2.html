@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito</title>
+
+ 
+<style>
+#cd-cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+
+  /* header height */
+  padding-top: 50px;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  transition: right 0.3s;
+}
+
+#cd-cart.speed-in {
+  right: 0;
+}
+
+</style>
+
+<header>
+   <!-- logo and menu here -->
+   <div id="cd-cart-trigger"><a class="cd-                           g-replace" href="#0">Cart</a></div>
+</header>
+
+<main>
+  hola
+</main>
+
+<div id="cd-shadow-layer"></div>
+
+<div id="cd-cart">
+   <h2>Cart</h2>
+   <ul class="cd-cart-items">
+      <li>
+         <!-- ... -->
+      </li>
+
+      <li>
+         <!-- ... -->
+      </li>
+   </ul> <!-- cd-cart-items -->
+
+   <div class="cd-cart-total">
+      <p>Total <span>$39.96</span></p>
+   </div> <!-- cd-cart-total -->
+
+   <a href="#0" class="checkout-btn">Checkout</a>
+
+   <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
+</div> <!-- cd-cart -->
+
+</script>
+<script>
+function move_navigation( $navigation, $MQ) {
+   if ( $(window).width() >= $MQ ) {
+      $navigation.detach();
+      $navigation.appendTo('header');
+   } else {
+      $navigation.detach();
+      $navigation.insertAfter('header');
+   }
+}
+</script>
+</body>

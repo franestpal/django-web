@@ -1,0 +1,278 @@
+<style>
+.footer {
+	background: rgba(180,204,204,0.7);
+	
+}
+
+.footer__about {
+	margin-bottom: 20px;
+}
+
+.footer__about .footer__logo {
+	margin-bottom: 20px;
+}
+
+.footer__about .footer__logo a {
+	display: inline-block;
+}
+
+.footer__about .footer-card-icon
+ {
+	margin-bottom: 10px;
+}
+.footer__about .footer-card-icon a
+ {
+display: inline-block;
+}
+
+.footer__about p {
+	color: #b7b7b7;
+	margin-bottom: 20px;
+}
+
+.footer__widget {
+	margin-bottom: 20px;
+}
+
+.footer__widget h6 {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer__widget ul li {
+	line-height: 36px;
+	list-style: none;
+}
+
+.footer__widget ul li a {
+	color: #b7b7b7;
+	font-size: 15px;
+}
+
+.footer__widget .footer__newslatter p {
+	color: white;
+}
+
+.footer__widget .footer__newslatter form {
+	position: relative;
+}
+
+.footer__widget .footer__newslatter form input {
+	width: 100%;
+	font-size: 15px;
+	color: #3d3d3d;
+	background: transparent;
+	border: none;
+	padding: 15px 0;
+	border-bottom: 2px solid #ffffff;
+}
+
+.footer__widget .footer__newslatter form input::-webkit-input-placeholder {
+	color: #3d3d3d;
+}
+
+.footer__widget .footer__newslatter form input::-moz-placeholder {
+	color: #3d3d3d;
+}
+
+.footer__widget .footer__newslatter form input:-ms-input-placeholder {
+	color: #3d3d3d;
+}
+
+.footer__widget .footer__newslatter form input::-ms-input-placeholder {
+	color: #3d3d3d;
+}
+
+.footer__widget .footer__newslatter form input::placeholder {
+	color: #3d3d3d;
+}
+
+.footer__widget .footer__newslatter form button {
+	color: #b7b7b7;
+	font-size: 16px;
+	position: relative ;
+	right: 5px;
+	top: 0;
+	height: 100%;
+	background: transparent;
+	border: none;
+}
+
+.footer__copyright__text {
+	border-top: 1px solid white;
+	padding: 10px 0;
+	margin-top: 10px;
+}
+
+.footer__copyright__text p {
+	color: white;
+	margin-bottom: 0;
+}
+
+.footer__copyright__text p i {
+	color: solid white;
+}
+
+.footer__copyright__text p a {
+	color: solid white;
+}
+
+ #fafoot{
+  padding: 20px;
+  font-size: 30px;
+  width: 75px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 25%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: red;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  position:center;
+}
+
+#facard{
+  padding: 20px;
+  font-size: 30px;
+  width: 75px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;}
+
+.fa-cc-visa{color:#253b80}
+
+
+
+
+
+
+/* actual mastercard icon
+ *
+ * see spec here: 
+ *
+ * https://brand.mastercard.com/brandcenter/mastercard-brand-mark.html
+ *
+*/
+
+.mastercard-icon {
+  display: inline-block;
+  height: 1em;
+  isolation: isolate;
+  position: relative;
+  line-height: 1em;
+  vertical-align: middle;
+  width: 1.611em;
+}
+
+.mastercard-icon::before,
+.mastercard-icon::after {
+  border-radius: .5em;
+  content: "";
+  display: inline-block;
+  height: 1em;
+  position: absolute;
+  width: 1em;
+}
+
+.mastercard-icon::before {
+  background-color: #eb001b;
+  left: 12px;
+  top: 0;
+}
+
+.mastercard-icon::after {
+  background-color: #f79e1b;
+  mix-blend-mode: hard-light;
+  right: 12px;
+  top: 0;
+}
+.fa-paypal {
+  color: #253b80;
+}
+
+
+</style>
+{% load static %}
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="{% static 'core/img2/logo.png' %}" alt=""></a>
+                        </div>
+                    <div class="footer-card-icon">
+                            <i class="mastercard-icon 1x" id = "facard"></i>
+                            <i class="fa fa-paypal fa-1x" id = "facard"></i></i>
+                            <i class="fa fa-cc-visa fa-1x" id = "facard"></i>
+                     </div>   
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                <div class="footer__widget">
+                        <h6>Siguenos</h6>
+
+                <div class="lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Suscribete, y recibe nuestras ofertas diarias</p>
+                            <form action="#">
+                                <input type="text" placeholder="tu correo electronico">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                        
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> Caudeli Pescadería
+                        </p>
+
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  </footer>

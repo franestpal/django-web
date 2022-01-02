@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'core/base.html' %}
+{% load static %}
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Site Metas -->
+    <title>RecipeList - Stylish Magazine Blog Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/blog/images/apple-touch-icon.png">
+    
+    <!-- Design fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900" rel="stylesheet"> 
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/blog/css/bootstrap.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons core CSS -->
+    <link href="/static/blog/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/style.css" rel="stylesheet>
+
+    <!-- Responsive styles for this template -->
+    <link href="/blog/static/blog/css/responsive.css" rel="stylesheet">
+    <link href="/static/blog/css/responsive.css" rel="stylesheet">
+    <!-- Colors for this template -->
+    <link href="/static/blog/css/colors.css" rel="stylesheet">
+
+    <!-- Version Food CSS for this template -->
+    <link href="/static/blog/css/version/food.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+
+{% block content %}
+  {% for post in posts %}
+        <section class="section lb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <div class="page-wrapper">
+                            <div class="blog-list clearfix">
+                                <div class="blog-box row">
+                                    <div class="col-md-4">
+                                        <div class="post-media">
+                                            <a title="">
+                                                <img src="static/blog/upload/blog_square_05.jpg" alt="" class="img-fluid">
+                                                <div class="hovereffect"></div>
+                                            </a>
+                                        </div><!-- end media -->
+                                    </div><!-- end col -->  
+
+                                <hr class="invis">
+                
+                                    <div class="blog-box row">
+                                        <div class="col-md-4">
+                                            <div class="post-media">
+                                                <a href="   " title="">
+                                                    <img alt="" class="img-fluid" src="{{post.image.url}}">
+                                                    <div class="hovereffect"></div>
+                                                </a>
+                                            </div><!-- end media -->
+                                        </div><!-- end col -->
+
+                                        <div class="blog-meta big-meta col-md-8">
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <h4><a href="{% url 'blog' %}" title="">{{post.title}}</a></h4>
+                                            <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                            {% for category in post.categories.all %}
+                                            <small><a href="{% url 'category' category.id %}"title="">{{category.name}}</a>{% if not forloop.last %},{% endif %}</small>
+                                            {% endfor %}
+                                            <small><a  title="">{{post.published|date:"SHORT_DATE_FORMAT"}}</a></small>
+                                            <small><a title="">{{post.author}}</a></small>
+                                        </div><!-- end meta -->         
+                                    </div><!-- end blog-box -->
+                                      </section>
+                                        {% endfor %}
+                                      {% endblock %}
+                                
+                        
+
+        <div class="dmtop">Scroll to Top</div>
+        
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <script href="/static/blog/js/jquery.min.js"></script>
+    <script href="/static/blog/js/tether.min.js"></script>
+    <script href="/static/blog/js/bootstrap.min.js"></script>
+    <script href="/static/blog/js/custom.js"></script>
+</body>
+</html>

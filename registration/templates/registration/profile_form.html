@@ -1,0 +1,115 @@
+
+{% load static %}
+
+{% block title %} Settings {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    {% load static %}
+
+
+
+
+
+
+ 
+
+    <!-- Bootstrap -->
+    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Roboto:300,100'Italic', serif; rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.
+    css">
+     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+    <link rel="stylesheet" href="static/core/css/css-web/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="static/core/css/css-web/animate.css">
+    
+    <link rel="stylesheet" href="static/core/css/css-web/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/core/css/css-web/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/core/css/css-web/magnific-popup.css">
+
+    <link rel="stylesheet" href="static/core/css/css-web/aos.css">
+
+    <link rel="stylesheet" href="static/core/css/css-web/ionicons.min.css">
+    
+
+    <link rel="stylesheet" href="static/core/css/css-web/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="static/core/css/css-web/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="static/core/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="static/core/css/css-web/icomoon.css">
+
+    	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<head>
+<styles type="text/css">
+
+</head>
+
+{% block content %}
+
+<main class="content">
+
+{% include "registration/navigation.html" %}
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+            <div>
+                <button class="btn btn-secondary text-dark mr-2 dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <span class="fas fa-plus mr-2"></span>New
+                </button>
+                <div class="dropdown-menu dashboard-dropdown dropdown-menu-left mt-2">
+                    <a class="dropdown-item font-weight-bold" href="#"><span class="far fa-file-alt mr-2"></span>Document</a>
+                    <a class="dropdown-item font-weight-bold" href="#"><span class="far fa-comment-dots mr-2"></span>Message</a>
+                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-box-open mr-2"></span>Product</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item font-weight-bold" href="#"><span
+                            class="fas fa-rocket text-danger mr-2"></span>Subscription Plan</a>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary mr-2"><span class="fas fa-calendar-alt"></span></button>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    <span class="fas fa-clipboard mr-2"></span>Reports
+                    <span class="icon icon-small ml-1"><span class="fas fa-chevron-down"></span></span>
+                </button>
+                <div class="dropdown-menu dashboard-dropdown dropdown-menu-left mt-2">
+                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-box-open mr-2"></span>Products</a>
+                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-store mr-2"></span>Customers</a>
+                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-cart-arrow-down mr-2"></span>Orders</a>
+                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-chart-pie mr-2"></span>Console</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item font-weight-bold" href="#"><span
+                            class="fas fa-rocket text-success mr-2"></span>All Reports</a>
+                </div>
+            </div>
+        </div>
+
+        {% include 'core/footer.html' %}
+
+    </main>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+

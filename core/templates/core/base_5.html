@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+ 
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    {% load static %}
+
+
+
+
+
+
+ 
+
+    <!-- Bootstrap -->
+    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Roboto:300,100Playfair Display', serif; rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.
+    css">
+    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+
+    <head>
+    <!-- Estilos -->
+    <style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+      body { 
+  
+    background-image: linear-gradient(45deg, rgba(180,204,204), rgba(180,204,204,0.4));
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Playfair Display', serif;;
+      }
+
+      p {
+        line-height: 1.75;
+      }
+
+      .text-faded {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .site-heading {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        line-height: 1;
+        font-family: 'Playfair Display', serif;;
+        position:relative;
+        display: inline-block
+      }
+
+      .site-heading .site-heading-upper {
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      .site-heading .site-heading-lower {
+        font-size: 5rem;
+        font-weight: 100;
+        line-height: 4rem;
+      }
+
+      .page-section {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+
+      .section-heading {
+        text-transform: uppercase;
+      }
+
+      .section-heading .section-heading-upper {
+        display: block;
+        font-size: 1rem;
+        font-weight: 800;
+        padding-bottom:.5rem;
+      }
+
+      .section-heading .section-heading-lower {
+        display: block;
+        font-size: 2rem;
+        font-weight: 200;
+      }
+
+
+      .section-heading .section-heading-under {
+        display: block;
+        font-size: 1rem;
+        text-transform: none;
+        font-weight: 300;
+        margin-top:.5rem;
+      }
+
+      .bg-faded {
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      #mainNav {
+
+        font-family: 'Playfair Display', serif;;
+        position:sticky;
+        height:100px;
+        border-top: 3px solid white;
+        display: block;
+        top:0;
+        height:75px;    
+      }
+
+      #mainNav .navbar-brand {
+        color: rgba(112,168,218,1);
+        font-family: 'Playfair Display', serif; !important;
+        font-size: 16px !important;
+      }
+
+      #mainNav .navbar-nav .nav-item .nav-link {
+        color: white;
+        font-family: 'Playfair Display', serif; !important;
+        font-size: 15px !important;
+        font-weight:bold;
+        display:inline-block;
+        position:sticky;
+        top:0;
+        float:right;
+        width:100%;
+        height:30%;
+        text-transform:uppercase;
+      }
+
+      #mainNav .navbar-nav .nav-item.active .nav-link {
+        color: white;
+      }
+
+      @media (min-width: 992px) {
+        #mainNav .navbar-nav .nav-item .nav-link {  
+          font-size: 0.5rem;
+          margin-top:0.40rem;
+        }
+        #mainNav .navbar-nav .nav-item .nav-link:hover {
+          color: rgba(255, 255, 255, 0.4);
+          display:inline-block;
+          font-size: 32px !important;
+          font-family: 'Playfair Display', serif; !important;
+        }
+        #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+          color: rgba(112,168,218,1);
+        }
+
+      .btn{font-family: 'Playfair Display', serif; !important;
+        font-size: 15px !important;
+        font-weight:bold;
+        display:inline-block;
+        text-transform:uppercase;}
+
+
+      .btn-xl {
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+
+      .intro {
+        position: relative;
+        
+      }
+
+      @media (min-width: 992px) {
+        .intro .intro-img {
+          width: 75%;
+          float: right;
+        }
+        .intro .intro-text {
+          left: 0;
+          width: 60%;
+          margin-top: 3rem;
+          position: absolute;
+        }
+        .intro .intro-text .intro-button {
+          width: 100%;
+          left: 0;
+          position: absolute;
+          bottom: -2rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .intro .intro-text {
+          width: 45%;
+        }
+      }
+
+      .cta {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        background-color: rgba(13, 32, 49, 1) ;
+        margin-top: 0px;
+      }
+
+      .cta .cta-inner {
+        position: relative;
+        padding: 3rem;
+        margin: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      .cta .cta-inner:before {
+        border-radius: 0.5rem;
+        content: '';
+        position: absolute;
+        top: -0.5rem;
+        bottom: -0.5rem;
+        left: -0.5rem;
+        right: -0.5rem;
+        border: 0.25rem solid rgba(255, 255, 255, 0.85);
+      }
+
+      .cta .cta-innerv {
+        position: relative;
+        padding: 3rem;
+        margin: 0.5rem;
+        background-color: rgba(255, 255, 255,1);
+      }
+
+      @media (min-width: 992px) {
+        .about-heading .about-heading-img {
+          position: relative;
+          z-index: 0;
+        }
+        .about-heading .about-heading-content {
+          margin-top: -5rem;
+          position: relative;
+          z-index: 1;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .product-item .product-item-title {
+          position: relative;
+          z-index: 1;
+          margin-bottom: -3rem;
+        }
+        .product-item .product-item-img {
+          position: relative;
+          z-index: 0;
+          max-width: 60vw;
+        }
+        .product-item .product-item-description {
+          position: relative;
+          z-index: 1;
+          margin-top: -3rem;
+          max-width: 50vw;
+        }
+      }
+
+      .list-hours {
+        font-size: 0.9rem;
+      }
+
+      .list-hours .list-hours-item {
+        border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+        padding-bottom: .25rem;
+        margin-bottom: 1rem;
+        font-style: italic;
+      }
+
+      .list-hours .list-hours-item.today {
+        font-weight: bold;
+        color: rgba(112,168,218,1);
+      }
+
+      @media (min-width: 992px) {
+        .list-hours {
+          width: 50%;
+          font-size: 1.1rem;
+        }
+      }
+
+      .address strong {
+        font-size: 1.2rem;
+      }
+
+      .footer {
+        background-color: rgba(13, 32, 49, 1);
+      }
+
+      .text-primary {
+        color: rgba(112,168,218,0.6) !important;
+      }
+
+      .bg-primary {
+        background-color: rgba(112,168,218,1) !important;
+      }
+
+      .btn {
+        box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+      }
+
+      .btn-primary {
+        background-color: rgba(112,168,218,1);
+        border-color: rgba(112,168,218,1);
+      }
+
+      .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+        background-color: #df902a;
+        border-color: #df902a;
+      }
+
+      .font-weight-light {
+        font-weight: 100 !important;
+      }
+
+      .mbtm{
+        padding-top: 5rem;
+      }
+
+      .mbt{
+        padding-top: 2rem;
+      }
+
+      .mbt1{
+        padding-top: 1.25rem;
+      }
+
+      a.link{
+        color: #df902a;
+      }
+
+      a.link:hover{
+        text-decoration: none;
+        color: rgba(112,168,218,1) !important;
+      }
+
+      .section-content{
+        font-family: 'Playfair Display', serif; !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 28px !important;
+      }
+
+      ul.errorlist{
+        padding-top: .75rem;
+        font-style: italic;
+        color: red;
+      }
+
+      @media (min-width: 992px) {
+      .carousel-item{
+        background: rgba(112,168,218,1);
+        width: 100%;
+        object-fit: cover;
+        height: 800px;
+        float:left;
+        margin-top: 0px;
+      }
+      }
+
+       @media (min-width: 992px) { 
+      .carousel-control-prev:{margin-top: 100px;}}
+
+      .site-heading{height: 50px;
+                    margin-top: 0.5rem}
+
+      }
+      .btn-outline-light{
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+      }
+
+      .masthead{position:fixed-top;
+              height: 100px;
+              background: rgba(180,204,204,0.6);
+              }
+
+      @media (min-width: 992px) {
+        .navbar{
+        font-family: 'Playfair Display', serif; !important;
+        font-size: 8px !important;
+        position: fixed-top;
+        }
+        .navbar .navbar-nav .nav-item .nav-link .clearfix:hover {
+          color: rgba(255, 255, 255, 0.4);
+          background: rgba(180,204,204,0.6);
+          }
+      }
+
+      .fa{position:fixed-top;
+          color: white;
+          padding:0.5px;}
+    
+          
+          }
+
+        .p {
+          float: left;
+          width: 100px;
+          height: 100px;
+          margin: 3px;
+          padding: 3px;
+          border: black 2px solid;
+        }
+
+      #texto{
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Playfair Display', serif; !important;
+  font-size: 15px !important;
+  color: white;
+  padding-left:0.5px;
+  font-weight:bold;
+  left: 125px;
+  top:55px;
+  position:absolute;
+  
+}
+#header-desktop{height:150px;}
+
+
+    </style>
+    </head>
+
+
+
+<body>
+
+    
+    
+    
+        
+    <header id="header-desktop">
+
+    {% include "core/navbar.html" %} 
+      <div id="header-logo">
+        <img id = "logo" src="{% static 'core/img/logo.png'%}" width="180" height="160" alt="" style="{float:left;}"><div id="texto">CAUDELI<div id="texto2">PESCADERIA</div></div>
+
+    
+      
+  </div>
+  </div>
+  </div>
+  </header>
+ 
+
+    <!-- Navegación -->
+    <header id="header-desktop">
+
+  {% include "core/navbar.html" %} 
+    <div id="header-logo">
+      <img id = "logo" src="{% static 'core/img/logo.png'%}" width="180" height="160" alt="" style="{float:left;}"><div id="texto">CAUDELI<div id="texto2">PESCADERIA</div></div>
+      </div>
+</div>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar" id="mainNav">
+            <div class="container">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav">
+                    <li class="nav-item px-lg-4 {% if request.path == '/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path == '/services/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path|slice:":6" == '/recetas/' %}active{% endif %}">
+                      <a class="nav-link text-uppercase text-expanded" href="{% url 'recetas' %}">Recetas</a>
+                    </li>
+                    <li class="nav-item px-lg-4 {% if request.path == '/store/' %}active{% endif %}">
+                      <a  class="btn btn-outline-light" href="store.html" >COMPRA ONLINE</a>
+                    </li>
+                </div>
+                <div class="col-md-12 search w3-xlarge">  
+                  <form class="form-inline my-2 my-lg-0"> 
+                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Buscar...." size="15">
+                    <i class="fa fa-search"></i>
+                  </form>
+                </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+      </nav> 
+      </header>
+                        
+
+    
+
+  
+  
+
+  
+
+
+    <!-- Pié de página -->
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+          <p class="m-0">
+            {% if LINK_TWITTER %}
+              <a href="{{LINK_TWITTER}}" class="link">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            {% endif %}
+            {% if LINK_FACEBOOK %}
+              <a href="{{LINK_FACEBOOK}}" class="link">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            {% endif %}
+            {% if LINK_INSTAGRAM %}
+              <a href="{{LINK_INSTAGRAM}}" class="link">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+          {% endif %}
+        </p>
+        <p class="m-0 mbt">
+          <!--<a href="sample.html" class="link">Política de privacidad</a> ·
+          <a href="sample.html" class="link">Aviso legal</a> ·
+          <a href="sample.html" class="link">Cookies</a>-->
+          {% load pages_extras %}
+          {% get_page_list as page_list %}
+          {% for page in page_list %}
+            
+            <a href="{% url 'page' page.id page.title|slugify %}" class="link">{{page.title}}</a> {% if not forloop.last %}·{% endif %} 
+          {% endfor %}
+        </p>
+        <p class="m-0 mbt1">&copy; Pescaderia Caudeli 2021</p>
+      </div>
+	  </footer>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>
